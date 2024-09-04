@@ -5,6 +5,9 @@ const nextConfig = {
     },
     typescript: {
         ignoreBuildErrors: true
+    },
+    experimental: {
+        forceSwcTransforms: true
     }
 };
 
