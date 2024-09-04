@@ -1,0 +1,63 @@
+/* =============================================
+=            Foundation - colors              =
+============================================= */
+
+/**
+ * This file defines the actual colors that will be used for styling. They will default to the palette
+ * we defined in the _variable.scss file. This is our default palette, and devs can override this
+ * with their own variables.
+ */
+
+/* =============================================
+=            Global text colors               =
+============================================= */
+//$body-text-color: var(--body-text-color, $dark) !default;
+$body-bg-color: var(--body-bg-color, $gray) !default;
+
+/* =============================================
+=                 Buttons                     =
+============================================= */
+$btn-primary-color: var(--btn-primary-color, $white-floral) !default;
+$btn-primary-bg: var(--btn-primary-bg, $primary-color) !default;
+
+/* =============================================
+=                 Navbar                      =
+============================================= */
+
+$navbar-color: var(--navbar-color,
+        $secondary-color) !default;
+
+
+/* =============================================
+=                 mediaLink                 =
+============================================= */
+
+$media-link-bg: var(--media-button-bg, $secondary-color);
+$media-link-text-color: var(--media-button-text-color, $white-floral);
+
+
+/* =============================================
+=                 Logo                         =
+============================================= */
+$logo-text-color: var(--special-meal-card-color, $primary-color);
+$logo-text-color-hover: var(
+                --special-meal-card-color-hover,
+                $white-floral
+);
+/* =============================================
+=                 introduction                 =
+============================================= */
+$intro-text-color: var(--special-meal-card-color, $primary-color);
+/* =============================================
+=                 SectionContent               =
+============================================= */
+$section-content-text-color: var(--section-content-text-color, $dark-color);
+
+/* =============================================
+=                 mySkills                     =
+============================================= */
+$skill-items-border: var(--skill-item-border, $black);
+/* =============================================
+=                 skillIcon                    =
+============================================= */
+$skill-icon-color: var(--skill-item-border, $black);

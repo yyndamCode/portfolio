@@ -1,0 +1,29 @@
+@import "../../styles/sass/all";
+
+.introduction {
+  color: $intro-text-color;
+  font-family: var(--font-poppins);
+  font-weight: $fw-bold;
+  font-size:$fs-2xxxl ;
+  line-height: 70px;
+  &__title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  &__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 1.25rem;
+  }
+}

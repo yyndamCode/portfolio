@@ -1,0 +1,15 @@
+@import "../../styles/sass/all";
+
+.my-projects {
+  margin: px-to-rem(104) 0;
+
+  &__box {
+    margin-top: px-to-rem(100);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: px-to-rem(47);
+    row-gap: px-to-rem(62);
+
+  }
+
+}

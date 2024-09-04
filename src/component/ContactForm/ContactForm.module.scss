@@ -1,0 +1,19 @@
+@import "../../styles/sass/all";
+
+.contactForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: px-to-rem(20);
+
+  &__social-buttons {
+    @include between;
+    gap: px-to-rem(24);
+  }
+
+  &__social-media {
+    display: flex;
+    align-items: center;
+    gap: px-to-rem(20);
+  }
+}

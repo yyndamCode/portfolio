@@ -1,0 +1,17 @@
+@import "../../styles/sass/all";
+
+.projects-links {
+  @include between;
+  &__title{
+    margin-left: px-to-rem(10);
+    text-decoration: underline;
+  }
+}
+
+.projects-link {
+  @include center;
+  color: $black;
+  font-size: $fs-sm;
+  font-weight: $fw-normal;
+}
+

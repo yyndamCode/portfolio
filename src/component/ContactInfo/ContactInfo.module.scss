@@ -1,0 +1,41 @@
+@import "../../styles/sass/all";
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: px-to-rem(48);
+    font-weight: $fw-extrabold;
+    line-height: px-to-rem(56);
+    margin-bottom: px-to-rem(20);
+  }
+
+  &__description {
+    color: $dark-color;
+    font-size: $fs-sm;
+    font-weight: $fw-normal;
+    line-height: px-to-rem(24);
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: column;
+    row-gap: px-to-rem(10);
+    margin-top: px-to-rem(40);
+  }
+
+  &__email {
+    color: $black;
+    font-size: px-to-rem(28);
+    font-weight: $fw-semibold;
+    line-height: px-to-rem(32);
+  }
+
+  &__phone {
+    color: $black;
+    font-size: px-to-rem(28);
+    font-weight: $fw-semibold;
+    line-height: px-to-rem(32);
+  }
+}

@@ -1,0 +1,107 @@
+@import "../../styles/sass/all";
+
+.skill-item {
+  position: relative;
+  padding: px-to-rem(37) px-to-rem(24);
+  border-radius: $br-sm;
+  box-shadow: 0 2px 4px 0 rgba(136, 144, 195, 0.2),
+  0 5px 15px 0 rgba(37, 44, 97, 0.15);
+  display: grid;
+  justify-items: center;
+  gap: px-to-rem(32);
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.7s;
+
+  &__icon {
+    font-size: px-to-rem(70);
+    color: $skill-icon-color;
+    transition: all 0.2s ease;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__name {
+    font-size: $fs-xl;
+    font-weight: $fw-bold;
+  }
+  :before {
+    content: "";
+    position: absolute;
+    background: rgb(85 108 214 / 5%);
+    width: 170px;
+    height: 400px;
+    z-index: -1;
+    transform: rotate(42deg);
+    right: -56px;
+    top: -23px;
+    border-radius: 35px;
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &--html:hover &__icon {
+    color: $icon-html-color;
+  }
+
+  &--css:hover &__icon {
+    color: $icon-css-color;
+  }
+
+  &--javascript:hover &__icon {
+    color: $icon-js-color;
+  }
+
+  &--typescript:hover &__icon {
+    color: $icon-typescript-color;
+  }
+
+  &--react:hover &__icon {
+    color: $icon-react-color;
+  }
+
+  &--redux:hover &__icon {
+    color: $icon-react-redux-color;
+  }
+
+  &--bootstrap:hover &__icon {
+    color: $icon-bootstrap-color;
+  }
+
+  &--tailwindcss:hover &__icon {
+    color: $icon-tailwindCss-color;
+  }
+
+  &--sass:hover &__icon {
+    color: $icon-sass-color;
+  }
+
+  &--git:hover &__icon {
+    color: $icon-git-color;
+  }
+
+  &--storybook:hover &__icon {
+    color: $icon-storybook-color;
+  }
+
+
+}
+//
+//.hover_color_bubble{
+//  position: absolute;
+//  background: rgb(54 81 207 / 15%);
+//  width: 80rem;
+//  height: 80rem;
+//  left: 0;
+//  right: 0;
+//  z-index: -1;
+//  top: 16rem;
+//  border-radius: 50%;
+//  transform: rotate(-36deg);
+//  left: -18rem;
+//  transition: 0.4s;
+//}
+//.skill-item:hover .hover_color_bubble {
+//  top: 0rem;
+//}

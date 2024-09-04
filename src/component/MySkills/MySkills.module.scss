@@ -1,0 +1,13 @@
+@import "../../styles/sass/all";
+
+.skills {
+  margin: px-to-rem(172) 0 px-to-rem(107);
+
+  &__box {
+    margin-top: px-to-rem(104);
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    column-gap: px-to-rem(20);
+    row-gap: px-to-rem(40);
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../styles/sass/all";
+.header{
+  @include between;
+  padding:px-to-rem(20) 0;
+
+  &__group{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+}

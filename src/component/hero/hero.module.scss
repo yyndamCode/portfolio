@@ -1,0 +1,8 @@
+@import "../../styles/sass/all";
+
+.intro__section {
+  margin:px-to-rem(210) 0 px-to-rem(173);
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  justify-items:center;
+}

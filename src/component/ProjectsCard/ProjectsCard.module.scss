@@ -1,0 +1,51 @@
+@import "../../styles/sass/all";
+
+.projects-card {
+  border-radius: $br-md;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.20), 0 10px 10px rgba(0, 0, 0, 0.20);
+  overflow: hidden;
+  position: relative;
+
+  &__img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    position: relative;
+  }
+
+  &__content {
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    padding: px-to-rem(28);
+    row-gap: px-to-rem(18);
+  }
+
+
+  &__title {
+    font-size: px-to-rem(28);
+    font-weight: $fw-medium;
+    line-height: px-to-rem(26);
+  }
+
+  &__description {
+    color: $secondary-color;
+    font-size: $fs-md;
+    font-weight: $fw-light;
+    line-height: px-to-rem(26);
+  }
+
+  &__tech-stack {
+    color: $secondary-color;
+    font-size: $fs-sm;
+    font-weight: $fw-medium;
+    line-height: px-to-rem(26);
+  }
+
+  &__tech-list {
+
+  }
+
+}

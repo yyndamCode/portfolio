@@ -1,0 +1,25 @@
+@import "../../styles/sass/all";
+
+.mediaLink {
+  @include center;
+  border: none;
+  border-radius: 100%;
+  background-color: $media-link-bg;
+  color: $media-link-text-color;
+  font-size: $fs-lg;
+
+  &--small {
+    width: px-to-rem(30);
+    height: px-to-rem(30);
+  }
+
+  &--medium {
+    width: px-to-rem(56);
+    height: px-to-rem(56);
+  }
+
+  &--large {
+
+  }
+
+}

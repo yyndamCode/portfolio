@@ -1,0 +1,10 @@
+@import "../../styles/sass/all";
+
+.textarea {
+  width: 100%;
+  border: px-to-rem(2) solid $black;
+  border-radius: $br-sm;
+  padding: px-to-rem(18) px-to-rem(24);
+  font-size: $fs-sm;
+  line-height: px-to-rem(20);
+}

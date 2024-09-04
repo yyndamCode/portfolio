@@ -1,0 +1,17 @@
+@import "../../styles/sass/all";
+
+.profile-picture {
+  @include center;
+  width: 350px;
+  height: 350px;
+  position: relative;
+  border-radius: 50%; /* Makes the border and image circular */
+  background: linear-gradient(0deg, rgba(0, 192, 253, 1) 0%, rgba(231, 15, 170, 1) 100%);
+  padding: 8px; /* Adjust the padding to match the border size */
+  box-sizing: border-box; /* Ensures padding is included in the element's size */
+
+
+  &__image {
+    border-radius: 50%;
+  }
+}

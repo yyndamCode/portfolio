@@ -1,0 +1,19 @@
+@import "../../styles/sass/all";
+
+.content-block {
+  &__title {
+    font-size: px-to-rem(48);
+    font-weight: $fw-bold;
+    line-height: px-to-rem(26);
+    margin-bottom: px-to-rem(49);
+    color: $primary-color;
+    text-align: center;
+  }
+
+  &__text {
+    font-size: px-to-rem(32);
+    font-weight: $fw-normal;
+    color: $dark-color;
+    text-align: center;
+  }
+}

@@ -1,0 +1,24 @@
+@import "../../styles/sass/all";
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+.logo {
+  @include center;
+  flex-direction: column;
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  background: rgb(0,192,253);
+  background: linear-gradient(90deg, rgba(0,192,253,1) 0%, rgba(231,15,170,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  &__title {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 42px;
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 600;
+  }
+}

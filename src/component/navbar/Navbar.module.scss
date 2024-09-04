@@ -1,0 +1,12 @@
+@import "../../styles/sass/all";
+.navbar {
+  @include center;
+
+  gap: 40px;
+
+  &__items {
+    color: $navbar-color;
+    font-size: $fs-lg;
+    text-decoration: none;
+  }
+}
