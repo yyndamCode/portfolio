@@ -11,7 +11,7 @@ const MyProjects = () => {
             <ContentBlock title="My Projects" text="Things I’ve built so far"/>
             <div className={styles["my-projects__box"]}>
                 {projectsData.map((project) =>
-                    <ProjectsCard id={project.id} image={project.image} title={project.title}
+                    <ProjectsCard  key={project.id} image={project.image} title={project.title}
                                   description={project.description} techStack={project.techStack} codeUrl={""}
                                   livePreviewUrl={""}></ProjectsCard>
                 )}

@@ -11,7 +11,8 @@ interface ProjectCardProps {
     techStack: string;
     livePreviewUrl: string;
     codeUrl: string;
-    id: number
+    id: number;
+    key: React.Key;
 }
 
 const ProjectsCard: React.FC<ProjectCardProps> = ({
@@ -21,10 +22,10 @@ const ProjectsCard: React.FC<ProjectCardProps> = ({
                                                       techStack,
                                                       livePreviewUrl,
                                                       codeUrl,
-                                                      id
+                                                      key
                                                   }) => {
     return (
-        <article key={id} className={styles["projects-card"]}>
+        <article key={key} className={styles["projects-card"]}>
             <figure className={styles['projects-card__figure']}>
                 <Image
                     src={image}
