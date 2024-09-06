@@ -4,7 +4,7 @@ import Logo from "@/component/logo/Logo";
 import Navbar from "@/component/navbar/Navbar";
 import SocialMedia from "@/component/socialMedia";
 import {navData} from "@/data/navData";
-import DarkModeBtn from "@/component/buttonDarkMode/darkModeBtn";
+import DarkModeBtn from "@/component/DarkMode/darkModeBtn";
 
 const Header = () => {
     return (
