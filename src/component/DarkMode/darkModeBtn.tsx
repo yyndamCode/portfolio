@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import useTheme from "@/hooks/useTheme"; // Custom hook for theme management
-import styles from "./DarkModeBtn.module.scss";
+import styles from "./darkModeBtn.module.scss";
 import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 import Icon from "@/component/Icon/Icon";
 

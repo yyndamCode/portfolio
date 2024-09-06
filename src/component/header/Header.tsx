@@ -13,7 +13,7 @@ const Header = () => {
             <div className={styles['header__group']}>
                 <Navbar navItems={navData}/>
                 <SocialMedia/>
-                <DarkModeBtn/>
+                <DarkModeBtn />
             </div>
         </header>
     );
