@@ -14,7 +14,6 @@ const Header = () => {
                 <Navbar navItems={navData}/>
                 <SocialMedia/>
                 <DarkModeBtn/>
-
             </div>
         </header>
     );

@@ -3,6 +3,7 @@ import React from "react";
 import useTheme from "@/hooks/useTheme"; // Custom hook for theme management
 import styles from "./DarkModeBtn.module.scss";
 import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
+import Icon from "@/component/Icon/Icon";
 
 const DarkModeBtn: React.FC = () => {
     const { isDarkMode, toggleDarkMode } = useTheme();
@@ -17,8 +18,8 @@ const DarkModeBtn: React.FC = () => {
                 id="dark-mode-toggle"
             />
             <label htmlFor="dark-mode-toggle" className={styles["switch"]}>
-                <IoMoonOutline className={styles["icon-moon"]} />
-                <IoSunnyOutline className={styles["icon-sun"]} />
+                <Icon IconTitle={IoMoonOutline} className={styles["icon-moon"]}/>
+                <Icon IconTitle={IoSunnyOutline} className={styles["icon-sun"]}/>
                 <div className={styles["ball"]}></div>
             </label>
         </div>
