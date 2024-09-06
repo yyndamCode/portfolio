@@ -1,13 +1,13 @@
 "use client"
 import React from 'react';
 import {SubmitHandler, useForm} from 'react-hook-form';
-import Input from "@/component/inputs/input";
+import Input from "@/component/ui/inputs/input";
 import styles from "./ContactForm.module.scss"
 import {z} from "zod";
 import {zodResolver} from "@hookform/resolvers/zod";
-import Textarea from "@/component/Textarea/Textarea";
-import Button from "@/component/Button/Button";
-import Icon from "@/component/Icon/Icon";
+import Textarea from "@/component/ui/Textarea/Textarea";
+import Button from "@/component/ui/Button/Button";
+import Icon from "@/component/ui/Icon/Icon";
 import {FaInstagram} from "react-icons/fa";
 import {FaTelegramPlane} from "react-icons/fa";
 import MediaLink from "@/component/MediaLink/MediaLink";

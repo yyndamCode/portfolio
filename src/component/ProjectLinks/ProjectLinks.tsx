@@ -3,7 +3,7 @@ import styles from './ProjectLinks.module.scss';
 import {FaLink} from 'react-icons/fa6';
 import {IoLogoGithub} from 'react-icons/io';
 import Link from "next/link";
-import Icon from "@/component/Icon/Icon";
+import Icon from "@/component/ui/Icon/Icon";
 
 interface ProjectLinksProps {
     livePreviewUrl: string;

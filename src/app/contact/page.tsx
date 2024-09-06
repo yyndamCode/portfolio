@@ -3,7 +3,7 @@ import styles from "./contact.module.scss"
 import SectionContent from "@/component/SectionContent/SectionContent";
 import ContactInfo from "@/component/ContactInfo/ContactInfo";
 import {navData} from "@/data/navData";
-import Input from "@/component/inputs/input";
+import Input from "@/component/ui/inputs/input";
 import ContactForm from "@/component/ContactForm/ContactForm";
 
 const Page: React.FC = () => {

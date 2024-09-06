@@ -13,10 +13,8 @@ interface ContactInfoProps {
 const ContactInfo: React.FC<ContactInfoProps> = ({title, description, email, phoneNumber,}) => {
     return (
         <div className={styles["contact-info"]}>
-
             <h1 className={styles["contact-info__title"]}>{title}</h1>
             <p className={styles["contact-info__description"]}>{description}</p>
-
             <div className={styles["contact-info__details"]}>
             <Link href={"/"} className={styles["contact-info__link"]}>{email}</Link>
             <Link href={"/"} className={styles["contact-info__link"]}>{phoneNumber}</Link>

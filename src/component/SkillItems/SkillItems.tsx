@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./SkillItems.module.scss"
-import Icon from "@/component/Icon/Icon";
+import Icon from "@/component/ui/Icon/Icon";
 import {IconType} from "react-icons";
 
 interface SkillItemProps {

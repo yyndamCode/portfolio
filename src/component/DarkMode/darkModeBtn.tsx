@@ -3,7 +3,7 @@ import React from "react";
 import useTheme from "@/hooks/useTheme"; // Custom hook for theme management
 import styles from "./darkModeBtn.module.scss";
 import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
-import Icon from "@/component/Icon/Icon";
+import Icon from "@/component/ui/Icon/Icon";
 
 const DarkModeBtn: React.FC = () => {
     const { isDarkMode, toggleDarkMode } = useTheme();
