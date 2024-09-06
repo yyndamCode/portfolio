@@ -9,7 +9,7 @@ type InputProps = {
     placeholder: string;
     required: boolean;
     register: UseFormRegister<FormInputs>;
-    errors?: FieldErrors;
+    errors: FieldErrors;
 }
 const Input: React.FC<InputProps> = ({
                                          id,
@@ -24,7 +24,7 @@ const Input: React.FC<InputProps> = ({
     return (
         <input
             // className={`${errors[id] ? "incorrect" : "correct"} `}
-            className={`${styles.input} ${styles[`input__${type}`]}`}
+            className={`${styles.input} ${styles[`input__${type}`]} ${errors[id] && styles[`input__incorrect`]}`}
             type={type}
             {...register(id,{ required: required })}
             placeholder={placeholder}

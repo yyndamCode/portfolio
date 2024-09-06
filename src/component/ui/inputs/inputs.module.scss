@@ -8,4 +8,12 @@
   padding: px-to-rem(18) px-to-rem(24);
   font-size: $fs-sm;
   line-height: px-to-rem(20);
+
+
+
+  &__incorrect {
+    border: px-to-rem(2) solid $red;
+    box-shadow: none;
+
+  }
 }

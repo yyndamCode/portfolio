@@ -18,14 +18,14 @@ const ContactForm: React.FC = () => {
     const {validationSchema, defaultValues, onSubmit} = useContactForm()
     type ValidationSchema = z.infer<typeof validationSchema>;
 
-    const {register, handleSubmit,} = useForm<ValidationSchema>({
+    const {register, handleSubmit, formState: {errors}} = useForm<ValidationSchema>({
         defaultValues,
         resolver: zodResolver(validationSchema)
     })
     return (
         <form className={styles.contactForm}>
-            <Input id="name" type="text" register={register} required placeholder={"Your name"}/>
-            <Input id="email" type="email" register={register} required placeholder={"Email"}/>
+            <Input id="name" type="text" register={register} required placeholder={"Your name"} errors={errors}/>
+            <Input id="email" type="email" register={register} required placeholder={"Email"} errors={errors}/>
             <Textarea id="description" register={register} required placeholder={"How can I help?*"}/>
             <div className={styles["contactForm__social-buttons"]}>
                 <Button onClick={handleSubmit(onSubmit)}>Get In Touch</Button>

@@ -141,6 +141,9 @@ a {
   text-decoration: none;
 }
 
+textarea:focus, input:focus {
+  outline: none;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
