@@ -114,7 +114,9 @@ section {
 body {
   line-height: 1;
   background-color: $body-bg-color;
+  transition: background-color 0.3s, color 0.3s;
 }
+
 
 menu,
 ol,

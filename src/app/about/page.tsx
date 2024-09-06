@@ -1,16 +1,16 @@
 import React from 'react';
 import styles from "./about.module.scss";
 import Image, { StaticImageData } from "next/image";
+import aboutImg from "@/../public/Group 1000015845(1).png"
 
+const Page:React.FC = () => {
 
-const Page = () => {
     return (
         <main>
             <section className={styles.about}>
                 <div className={styles["about__image"]}>
-                    <Image src={"@/../public/Group 1000015845(1).png"}  height={572} priority={true} alt="about me" />
+                    <Image src={aboutImg as StaticImageData} fill className={styles["about__image"]}  alt="about me" />
                 </div>
-
                 <div className={styles["about__content"]}>
                     <h2 className={styles["about__title"]}>About <strong>Me</strong></h2>
                     <div className={styles["about__description"]}>

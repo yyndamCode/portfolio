@@ -1,0 +1,21 @@
+@import "../../../styles/sass/all";
+
+.go-to-btn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: px-to-rem(8);
+
+  &__button {
+    @include center;
+    width: px-to-rem(46);
+    height: px-to-rem(46);
+    font-size: $fs-xl; // text-xl in Tailwind
+    margin-right: px-to-rem(8); // mr-2 in Tailwind
+    background-color: $btn-primary-10-color;
+    border-radius: $br-full;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+}

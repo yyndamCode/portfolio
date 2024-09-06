@@ -1,7 +1,9 @@
-import Logo from "@/component/logo/Logo";
+"use client"
 import Hero from "@/component/hero";
 import MySkills from "@/component/MySkills/MySkills";
 import MyProjects from "@/component/Projects/MyProjects";
+import GoToBtn from "@/component/ui/goToButton/goToButton";
+
 
 export default function Home() {
   return (
@@ -9,6 +11,7 @@ export default function Home() {
         <Hero/>
         <MySkills/>
         <MyProjects/>
+          <GoToBtn/>
     </main>
   );
 }

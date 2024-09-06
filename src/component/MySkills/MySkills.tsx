@@ -12,9 +12,9 @@ const MySkills = () => {
                           text="Technologies I’ve been working on recently"/>
             <div className={styles["skills__box"]}>
                 {
-                    skillsData.map((skill) =>
+                    skillsData.map((skill,index) =>
                         (
-                            <SkillItems key={skill.id} name={skill.name} icon={skill.icon}/>
+                            <SkillItems key={index} name={skill.name} icon={skill.icon}/>
                         ))
                 }
 

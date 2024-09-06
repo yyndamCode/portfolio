@@ -3,7 +3,7 @@ import { StaticImageData } from "next/image";
 
 export interface Project {
     id: number;
-    image: StaticImageData | string;
+    image: StaticImageData ;
     title: string;
     description: string;
     techStack: string;

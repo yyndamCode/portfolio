@@ -31,6 +31,7 @@
 $primary-color: #42446E;
 $secondary-color: #666666;
 $dark-color: #333333;
+$primary-10-color:#F5F5F5;
 /* Neutral Colors */
 
 $white-floral: #fff8ee;
@@ -52,6 +53,8 @@ $icon-tailwindCss-color: #44A8B3;
 $icon-sass-color: #cd6799;
 $icon-git-color: #DE4C36;
 $icon-storybook-color: #FF4785;
+$icon-moon-color:#f1c40f;
+$icon-sun-color:#f39c12;
 /* =====  End of Colors  ====== */
 
 
@@ -170,4 +173,5 @@ $spacing: (
 $br-sm: 6px;
 $br-md: 20px;
 $br-lg: 25px;
+$br-xxl: 50px;
 $br-full: 9999px;

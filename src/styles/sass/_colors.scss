@@ -18,6 +18,7 @@ $body-bg-color: var(--body-bg-color, $gray) !default;
 =                 Buttons                     =
 ============================================= */
 $btn-primary-color: var(--btn-primary-color, $white-floral) !default;
+$btn-primary-10-color: var(--btn-primary-10-color, $primary-10-color) !default;
 $btn-primary-bg: var(--btn-primary-bg, $primary-color) !default;
 
 /* =============================================
@@ -25,7 +26,7 @@ $btn-primary-bg: var(--btn-primary-bg, $primary-color) !default;
 ============================================= */
 
 $navbar-color: var(--navbar-color,
-        $secondary-color) !default;
+        $primary-color) !default;
 
 
 /* =============================================
@@ -60,4 +61,4 @@ $skill-items-border: var(--skill-item-border, $black);
 /* =============================================
 =                 skillIcon                    =
 ============================================= */
-$skill-icon-color: var(--skill-item-border, $black);
+$skill-icon-color: var(--skill-item-border, $primary-color);

@@ -25,17 +25,17 @@
     margin-top: px-to-rem(40);
   }
 
-  &__email {
-    color: $black;
+  &__link {
+    color: $primary-color;
     font-size: px-to-rem(28);
     font-weight: $fw-semibold;
     line-height: px-to-rem(32);
   }
 
-  &__phone {
-    color: $black;
-    font-size: px-to-rem(28);
-    font-weight: $fw-semibold;
-    line-height: px-to-rem(32);
-  }
+  //&__phone {
+  //  color: $primary-color;
+  //  font-size: px-to-rem(28);
+  //  font-weight: $fw-semibold;
+  //  line-height: px-to-rem(32);
+  //}
 }

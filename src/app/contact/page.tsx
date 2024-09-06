@@ -13,8 +13,8 @@ const Page: React.FC = () => {
                 <ContactForm/>
                 <ContactInfo title="Let's for talk Something special"
                              description="I seek to push the limits of creativity to create high-engaging, user-friendly, and memorable interactive experiences. "
-                             email="Youremail@gmail.com"
-                             phoneNumber="999999999999"/>
+                             email="yagageldiyew@gmail.com"
+                             phoneNumber="+99363680888"/>
             </section>
         </main>
     );

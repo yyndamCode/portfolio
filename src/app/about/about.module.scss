@@ -3,14 +3,15 @@
 .about {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: grid;
   grid-template-columns:1fr 1fr;
   column-gap: px-to-rem(80);
   padding: px-to-rem(60) 0;
 
   &__image {
-    width: 100%;
+    width: 90%;
+    height: px-to-rem(572);
     display: block;
     position: relative;
   }
@@ -41,6 +42,5 @@
     flex-direction: column;
     row-gap: px-to-rem(20);
   }
-
 
 }

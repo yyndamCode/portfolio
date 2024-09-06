@@ -2,7 +2,8 @@
 
 .input {
   width: 100%;
-  border: px-to-rem(2) solid $black;
+  border: px-to-rem(2) solid $primary-color;
+  box-shadow:  0 2px 4px 0 rgba(4, 38, 253, 0.2), 0 5px 15px 0 rgba(255, 255, 255, 0.15);
   border-radius: $br-sm;
   padding: px-to-rem(18) px-to-rem(24);
   font-size: $fs-sm;

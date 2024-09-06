@@ -1,11 +1,12 @@
 import React from 'react';
-import {FieldValues, UseFormRegister,} from 'react-hook-form';
+import {UseFormRegister,} from 'react-hook-form';
 import styles from './Textarea.module.scss';
+import {FormInputs} from "@/types/FormInputs";
 
 interface TextareaProps {
-    id: string;
+    id: keyof FormInputs;  // id burada da FormInputs anahtarlarına sınırlı
     required: boolean;
-    register: UseFormRegister<FieldValues>
+    register: UseFormRegister<FormInputs>
     placeholder: string;
     rows?: number;
     cols?: number;
@@ -16,7 +17,7 @@ const Textarea: React.FC<TextareaProps> = ({id, register, required, placeholder,
         <textarea
 
             id={id}
-            {...register(id, required)}
+            {...register(id, {required: required})}
             placeholder={placeholder}
             rows={rows}
             cols={cols}

@@ -1,15 +1,20 @@
-import React, {ReactNode} from 'react';
-import styles from "./MainLayout.module.scss";
+// components/layout/MainLayout.tsx
+"use client";
+import React, { ReactNode } from 'react';
+import styles from './MainLayout.module.scss';
+import useTheme from '../../hooks/useTheme'; // Custom hook to manage theme
 
 interface MainLayoutProps {
-    children: ReactNode; // Allows any valid React child
+    children: ReactNode;
 }
 
-const MainLayout: React.FC<MainLayoutProps> = ({ children })  => {
+const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
+    const { isDarkMode } = useTheme();
+
     return (
-        <div className={styles["container"]}>
-            {children}
-        </div>
+        <main className={`${isDarkMode ? styles.darkMode : styles.lightMode}`}>
+            <div className={styles.container}>{children}</div>
+        </main>
     );
 };
 

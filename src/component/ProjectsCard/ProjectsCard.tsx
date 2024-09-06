@@ -5,14 +5,14 @@ import ProjectLinks from "@/component/ProjectLinks/ProjectLinks";
 import {truncateText} from "@/utils/helpers";
 
 interface ProjectCardProps {
-    image: StaticImageData | string;
     title: string;
     description: string;
     techStack: string;
     livePreviewUrl: string;
     codeUrl: string;
     id: number;
-    key: React.Key;
+    image: StaticImageData;// Hem string hem de StaticImageData olabilir
+    isDarkMode: boolean;
 }
 
 const ProjectsCard: React.FC<ProjectCardProps> = ({
@@ -22,18 +22,20 @@ const ProjectsCard: React.FC<ProjectCardProps> = ({
                                                       techStack,
                                                       livePreviewUrl,
                                                       codeUrl,
-                                                      key
+                                                      isDarkMode
                                                   }) => {
     return (
-        <article key={key} className={styles["projects-card"]}>
+        <article className={`${styles["projects-card"]} ${isDarkMode && "projects-card__dark-mode"}`}>
             <figure className={styles['projects-card__figure']}>
+
                 <Image
                     src={image}
-                    width="auto"
+                    width={780}
                     height={290}
                     alt={title}
                     className={styles['projects-card__img']}
                 />
+
             </figure>
             <div className={styles['projects-card__content']}>
                 <h2 className={styles['projects-card__title']}>{title}</h2>

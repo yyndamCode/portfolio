@@ -1,4 +1,13 @@
+@import "../../styles/sass/all";
+.lightMode {
+  background-color: $white;
+  color: $black;
+}
 
+.darkMode {
+  background-color: $black;
+  color: $white;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -8,7 +17,6 @@
   max-width: 1400px; /* or your desired max-width */
   width: 100%;
 }
-
 @media (max-width: 768px) {
   .container {
     padding: 0 0.5rem; /* adjust padding for smaller screens */

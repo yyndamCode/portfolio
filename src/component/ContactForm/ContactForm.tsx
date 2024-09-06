@@ -13,14 +13,12 @@ import {FaTelegramPlane} from "react-icons/fa";
 import MediaLink from "@/component/MediaLink/MediaLink";
 import {useContactForm} from "@/hooks/useContactForm";
 
-type FromInputs = {
-    email: string;
-    name: string;
-    description: string;
-}
+
 const ContactForm: React.FC = () => {
     const {validationSchema, defaultValues, onSubmit} = useContactForm()
-    const {register, handleSubmit,} = useForm({
+    type ValidationSchema = z.infer<typeof validationSchema>;
+
+    const {register, handleSubmit,} = useForm<ValidationSchema>({
         defaultValues,
         resolver: zodResolver(validationSchema)
     })
