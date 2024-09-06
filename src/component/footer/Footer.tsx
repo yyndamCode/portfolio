@@ -12,7 +12,7 @@ const Footer = () => {
                 <Logo title="yyndam.AY"/>
                 <div className={styles['footer__group']}>
                   <Link href="/" className={styles["footer__link"]}>+99363680888</Link>
-                  <Link href="https://mail.google.com" className={styles["footer__link"]}>yagageldiyew@gmail.com</Link>
+                  <Link href="https://mail.google.com/yagageldiyew@gmail.com" className={styles["footer__link"]}>yagageldiyew@gmail.com</Link>
                     <SocialMedia/>
                 </div>
                     </div>
