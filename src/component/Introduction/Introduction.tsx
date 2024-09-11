@@ -11,7 +11,7 @@ const Introduction:React.FC = () => {
 
     return (
         <article className={`${styles["introduction"]} ${poppins.variable}` }>
-            <h1 id="introduction-title" className="introduction__title">
+            <h1 className="introduction__title">
                 Hi 👋,
             </h1>
             <h2 className="introduction__subtitle">

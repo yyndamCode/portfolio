@@ -2,12 +2,21 @@
 
 .content-block {
   &__title {
-    font-size: px-to-rem(48);
     font-weight: $fw-bold;
-    line-height: px-to-rem(26);
-    margin-bottom: px-to-rem(49);
     color: $primary-color;
     text-align: center;
+
+    @include tablet {
+      font-size: $fs-xxl;
+      line-height: px-to-rem(36);
+      margin-bottom: px-to-rem(29);
+
+    }
+    @include laptop {
+      font-size: px-to-rem(48);
+      line-height: px-to-rem(26);
+      margin-bottom: px-to-rem(49);
+    }
   }
 
   &__text {
@@ -15,5 +24,14 @@
     font-weight: $fw-normal;
     color: $dark-color;
     text-align: center;
+    @include tablet {
+      font-size: $fs-xl;
+
+    }
+    @include laptop {
+      font-size: px-to-rem(32);
+    }
   }
+
+
 }

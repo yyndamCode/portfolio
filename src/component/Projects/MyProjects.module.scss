@@ -7,9 +7,27 @@
     margin-top: px-to-rem(100);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: px-to-rem(47);
-    row-gap: px-to-rem(62);
 
+
+    @include tablet {
+      margin: px-to-rem(80) 0;
+      padding:0 px-to-rem(30);
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: px-to-rem(35);
+      row-gap: px-to-rem(50);
+    }
+    @include laptop {
+      margin: px-to-rem(104) 0;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: px-to-rem(30);
+      row-gap: px-to-rem(40);
+    }
+    @include desktop {
+      column-gap: px-to-rem(45);
+      row-gap: px-to-rem(60);
+
+
+    }
   }
 
 }

@@ -1,8 +1,18 @@
 @import "../../styles/sass/all";
 
 .intro__section {
-  margin:px-to-rem(210) 0 px-to-rem(173);
   display: grid;
   grid-template-columns:1fr 1fr;
   justify-items:center;
+  @include tablet {
+    margin: px-to-rem(140) 0;
+  }
+
+  @include laptop {
+    margin: px-to-rem(140) 0;
+  }
+
+  @include desktop {
+    margin: px-to-rem(210) 0 px-to-rem(173);
+  }
 }

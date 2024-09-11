@@ -1,7 +1,7 @@
 @import "../../styles/sass/all";
 
 .skills {
-  margin: px-to-rem(172) 0 px-to-rem(107);
+
 
   &__box {
     margin-top: px-to-rem(104);
@@ -9,5 +9,23 @@
     grid-template-columns: repeat(5,auto);
     column-gap: px-to-rem(20);
     row-gap: px-to-rem(40);
+
+    @include tablet {
+      grid-template-columns: repeat(3, auto);
+      margin-top: px-to-rem(80);
+
+    }
+    @include laptop {
+      grid-template-columns: repeat(5, auto);
+      margin-top: px-to-rem(104);
+
   }
+    } @include tablet {
+          margin: px-to-rem(142) 0 px-to-rem(70);
+
+    }
+    @include laptop {
+      margin: px-to-rem(172) 0 px-to-rem(107);
+
+    }
 }

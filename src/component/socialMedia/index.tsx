@@ -6,6 +6,7 @@ import {FaTwitter} from "react-icons/fa6";
 import { TiSocialLinkedin } from "react-icons/ti";
 
 const SocialMedia = () => {
+
     return (
         <div className={styles['socialMedia']}>
             <MediaLink size="small" mediaHref="https://github.com/yhlass7/portfolio">

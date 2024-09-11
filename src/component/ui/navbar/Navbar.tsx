@@ -12,7 +12,7 @@ type NavBarProps = {
 
 const NavBar: FC<NavBarProps> = ({ navItems }) => {
     return (
-        <nav className={`${styles["navbar"]}`}>
+        <nav className={`${styles.navbar}`}>
             {navItems.map((items, index) => (
                 <Link
                     key={index}

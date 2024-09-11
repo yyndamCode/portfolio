@@ -9,17 +9,31 @@
   font-size: $fs-lg;
 
   &--small {
-    width: px-to-rem(30);
-    height: px-to-rem(30);
+
+    @include tablet {
+      width: px-to-rem(24);
+      height: px-to-rem(24);
+      font-size: $fs-md;
+    }
+    @include laptop {
+      width: px-to-rem(30);
+      height: px-to-rem(30);
+      font-size: $fs-lg;
+    }
   }
 
   &--medium {
-    width: px-to-rem(56);
-    height: px-to-rem(56);
+    @include tablet {
+      width: px-to-rem(24);
+      height: px-to-rem(24);
+      font-size: $fs-md;
+    }
+    @include laptop {
+      width: px-to-rem(56);
+      height: px-to-rem(56);
+      font-size: $fs-lg;
+    }
   }
 
-  &--large {
-
-  }
 
 }

@@ -18,6 +18,16 @@
     transition: all 0.2s ease;
     position: relative;
     z-index: 10;
+    @include tablet {
+      font-size: px-to-rem(50);
+
+
+    }
+    @include laptop {
+      font-size: px-to-rem(70);
+
+
+    }
   }
 
   &__name {
@@ -36,6 +46,16 @@
     top: -23px;
     border-radius: 35px;
   }
+
+  @include tablet {
+    padding: px-to-rem(20);
+
+  }
+  @include laptop {
+    padding: px-to-rem(37) px-to-rem(24);
+
+  }
+
   &:hover {
     transform: scale(1.1);
   }

@@ -30,7 +30,7 @@ const ProjectsCard: React.FC<ProjectCardProps> = ({
 
                 <Image
                     src={image}
-                    width={780}
+                    width={680}
                     height={290}
                     alt={title}
                     className={styles['projects-card__img']}

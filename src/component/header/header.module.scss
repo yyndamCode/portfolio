@@ -6,6 +6,15 @@
   &__group{
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: px-to-rem(20);
+
+    @include laptop {
+      gap: px-to-rem(30); /* Adjust padding for desktop screens */
+    }
+    @include desktop {
+      gap: px-to-rem(50); /* Adjust padding for desktop screens */
+    }
+
+
   }
 }

@@ -1,12 +1,27 @@
 @import "../../../styles/sass/all";
 .navbar {
+  display: block;
   @include center;
-
-  gap: 40px;
+  gap: px-to-rem(40);
+  font-size: $fs-lg;
 
   &__items {
     color: $navbar-color;
-    font-size: $fs-lg;
     text-decoration: none;
+  }
+
+  @include tablet {
+    gap: px-to-rem(20);
+    font-size: $fs-sm;
+
+  }
+
+  @include laptop {
+    gap: px-to-rem(20);
+    font-size: $fs-md;
+  }
+
+  @include desktop {
+    gap: px-to-rem(40);
   }
 }

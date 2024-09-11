@@ -2,8 +2,8 @@
 
 .profile-picture {
   @include center;
-  width: 350px;
-  height: 350px;
+  width: px-to-rem(350);
+  height: px-to-rem(350);
   position: relative;
   border-radius: 50%; /* Makes the border and image circular */
   background: linear-gradient(0deg, rgba(0, 192, 253, 1) 0%, rgba(231, 15, 170, 1) 100%);
@@ -12,6 +12,26 @@
 
 
   &__image {
+    width: px-to-rem(330);
+    height: px-to-rem(330);
     border-radius: 50%;
+    @include tablet {
+      width: px-to-rem(270);
+      height: px-to-rem(270);
+    }
+    @include desktop {
+      width: px-to-rem(330);
+      height: px-to-rem(330);
+    }
   }
+
+  @include tablet {
+    width: px-to-rem(290);
+    height: px-to-rem(290);
+  }
+  @include desktop {
+    width: px-to-rem(350);
+    height: px-to-rem(350);
+  }
+
 }

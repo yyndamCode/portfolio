@@ -8,7 +8,6 @@ const Hero: React.FC = () => {
         <section className={styles["intro__section"]}>
             <Introduction />
             <ProfilePicture src={profileImage} alt="photo"/>
-
         </section>
     );
 };

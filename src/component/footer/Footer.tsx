@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./Footer.module.scss"
-import Logo from "@/component/logo/Logo";
+import Logo from "@/component/ui/logo/Logo";
 import SocialMedia from "@/component/socialMedia";
 import Navbar from "@/component/ui/navbar/Navbar";
 import {navData} from "@/data/navData";

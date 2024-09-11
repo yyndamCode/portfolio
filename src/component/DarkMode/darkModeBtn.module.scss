@@ -17,9 +17,8 @@
   justify-content: space-between;
   padding: px-to-rem(5);
   position: relative;
-  height: px-to-rem(20);
-  width: px-to-rem(50);
   transition: background-color 0.3s ease;
+  font-size: $fs-sm;
 
   .ball {
     background-color: $white;
@@ -31,21 +30,49 @@
     width: px-to-rem(22);
     transform: translateX(0);
     transition: transform 0.2s linear;
+
+    @include tablet {
+      height: px-to-rem(16);
+      width: px-to-rem(16);
+    }
+    @include laptop {
+      height: px-to-rem(22);
+      width: px-to-rem(22);
+    }
+  }
+
+  @include tablet {
+    height: px-to-rem(15);
+    width: px-to-rem(35);
+    font-size: $fs-xs;
+
+  }
+  @include laptop {
+    height: px-to-rem(20);
+    width: px-to-rem(50);
+    font-size: $fs-sm;
+
   }
 }
 
 .checkbox:checked + .switch .ball {
-  transform: translateX(px-to-rem(32));
+
+  @include tablet {
+    transform: translateX(px-to-rem(24));
+  }
+  @include laptop {
+    transform: translateX(px-to-rem(32));
+  }
 }
 
 .icon-moon {
   color: $icon-moon-color;
-  font-size: $fs-sm;
+
 }
 
 .icon-sun {
   color: $icon-sun-color;
-  font-size: $fs-sm;
+
 }
 
 

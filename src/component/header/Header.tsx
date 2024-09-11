@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from "./header.module.scss"
-import Logo from "@/component/logo/Logo";
+import Logo from "@/component/ui/logo/Logo";
 import Navbar from "@/component/ui/navbar/Navbar";
 import SocialMedia from "@/component/socialMedia";
 import {navData} from "@/data/navData";
