@@ -13,7 +13,7 @@ const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
 
     return (
         <main className={`${isDarkMode ? styles.darkMode : styles.lightMode}`}>
-            <div className={styles.container}>{children}</div>
+            <div className={styles.layout}>{children}</div>
         </main>
     );
 };

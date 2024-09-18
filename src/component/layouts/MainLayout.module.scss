@@ -8,17 +8,12 @@
   background-color: $black;
   color: $white;
 }
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  padding: 0 px-to-rem(10); /* responsive padding */
-  margin: 0 auto;
-  max-width: 1400px; /* or your desired max-width */
+.layout {
+@include auto-container;
 
 
   @include mobile {
-    padding: 0 px-to-rem(10); /* Adjust padding for desktop screens */
+    padding: 0 px-to-rem(20); /* Adjust padding for desktop screens */
   }
   @include tablet {
     padding: 0 px-to-rem(20); /* Adjust padding for desktop screens */

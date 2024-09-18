@@ -10,17 +10,36 @@
     column-gap: px-to-rem(20);
     row-gap: px-to-rem(40);
 
+    @include android {
+      grid-template-columns: repeat(2, auto);
+      margin-top: px-to-rem(60);
+      gap: px-to-rem(20);
+    }
+    @include mobile {
+      grid-template-columns: repeat(2, 40%);
+      justify-content: center;
+      margin-top: px-to-rem(60);
+    }
+
     @include tablet {
       grid-template-columns: repeat(3, auto);
+      justify-content: normal;
       margin-top: px-to-rem(80);
-
+      column-gap: px-to-rem(20);
+      row-gap: px-to-rem(40);
     }
     @include laptop {
       grid-template-columns: repeat(5, auto);
       margin-top: px-to-rem(104);
 
   }
-    } @include tablet {
+
+    }
+
+  @include mobile {
+          margin: px-to-rem(142) 0 px-to-rem(70);
+
+    }  @include tablet {
           margin: px-to-rem(142) 0 px-to-rem(70);
 
     }

@@ -28,7 +28,7 @@ const ContactForm: React.FC = () => {
             <Input id="email" type="email" register={register} required placeholder={"Email"} errors={errors}/>
             <Textarea id="description" register={register} required placeholder={"How can I help?*"}/>
             <div className={styles["contactForm__social-buttons"]}>
-                <Button onClick={handleSubmit(onSubmit)}>Get In Touch</Button>
+                <Button size="large" onClick={handleSubmit(onSubmit)}>Get In Touch</Button>
                 <div className={styles["contactForm__social-media"]}>
                     <MediaLink size="medium" mediaHref={"https://www.instagram.com/yhlac__0206"}>
                         <Icon IconTitle={FaInstagram}/>

@@ -15,7 +15,7 @@ const MyProjects = () => {
                 {projectsData.map((project,index) =>
                     <ProjectsCard  key={index}  id={project.id} image={project.image} title={project.title}
                                   description={project.description} techStack={project.techStack} codeUrl={""}
-                                  livePreviewUrl={""} isDarkMode={isDarkMode}></ProjectsCard>
+                                  livePreviewUrl={""} isDarkMode={isDarkMode} />
                 )}
             </div>
         </SectionContent>

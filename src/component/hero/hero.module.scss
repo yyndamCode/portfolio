@@ -4,8 +4,20 @@
   display: grid;
   grid-template-columns:1fr 1fr;
   justify-items:center;
+
+
+  @include android {
+    margin: px-to-rem(100) 0;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
   @include tablet {
-    margin: px-to-rem(140) 0;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    justify-items:center;
   }
 
   @include laptop {
@@ -15,4 +27,5 @@
   @include desktop {
     margin: px-to-rem(210) 0 px-to-rem(173);
   }
+
 }

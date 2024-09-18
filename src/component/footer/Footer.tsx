@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./Footer.module.scss"
 import Logo from "@/component/ui/logo/Logo";
 import SocialMedia from "@/component/socialMedia";
-import Navbar from "@/component/ui/navbar/Navbar";
+import Navbar from "@/component/ui/navbar/navbar";
 import {navData} from "@/data/navData";
 import Link from "next/link";
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
                 </div>
                     </div>
             <div className={styles['footer__bottom']}>
-                <Navbar navItems={navData}/>
+                <Navbar navItems={navData} />
                 <p className={styles["footer__sub-title"]}>Designed and built by <span>yyndam.AY</span> with Love & Coffee</p>
             </div>
         </footer>

@@ -1,11 +1,28 @@
 @import "../../../styles/sass/all";
 
 .button {
-  padding: px-to-rem(18) px-to-rem(20);
+  display: block;
   border: none;
   border-radius: $br-sm;
-  font-size: px-to-rem(20);
+  font-size: px-to-rem(32);
   font-weight: $fw-semibold;
   color: $white;
   background-color: $secondary-color;
+  cursor: pointer;
+  z-index: 111;
+
+  &--small {
+
+  }
+
+  &--medium {
+
+  }
+
+  &--large {
+    position: relative;
+    z-index: 10;
+    padding: px-to-rem(18) px-to-rem(20);
+  }
+
 }

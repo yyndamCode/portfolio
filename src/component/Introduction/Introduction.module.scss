@@ -4,22 +4,23 @@
   color: $intro-text-color;
   font-family: var(--font-poppins);
   font-weight: $fw-bold;
-  font-size:$fs-2xxxl ;
+  font-size:$fs-2xxxl;
   line-height: px-to-rem(70);
 
   &__title {
     margin-bottom: 1rem;
+
+  } &__sub-title {
+text-align: center;
   }
 
-  &__subtitle {
-    margin-bottom: 0.5rem;
-  }
 
-  &__name {
-    margin-bottom: 1rem;
-  }
+  @include android {
+    font-size: $fs-xxl;
+    line-height: px-to-rem(44);
+    margin-top: px-to-rem(30);
 
-  &__description {
+
   }
 
   @include tablet {
@@ -28,7 +29,8 @@
     justify-content: center;
     justify-items: center;
     font-size: $fs-xxl;
-    line-height: px-to-rem(50)
+    line-height: px-to-rem(50);
+    margin: px-to-rem(0);
 
   }
 

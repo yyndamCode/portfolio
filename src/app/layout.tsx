@@ -24,8 +24,8 @@ export default function RootLayout({
     <body className={`${inter.className}`}>
     <PortfolioProvider>
     <ToastProvider/>
-      <MainLayout>
       <Header/>
+      <MainLayout>
       {children}
       <Footer/>
     </MainLayout>

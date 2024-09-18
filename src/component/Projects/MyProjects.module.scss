@@ -8,24 +8,33 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
+    @include android {
+      margin: px-to-rem(40) 0;
+      grid-template-columns: repeat(1, 78%);
+      justify-content: center;
+      gap: px-to-rem(30);
+    }
+    @include mobile {
+      margin: px-to-rem(60) 0;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: normal;
+      gap: px-to-rem(30);
+    }
 
     @include tablet {
-      margin: px-to-rem(80) 0;
-      padding:0 px-to-rem(30);
-      grid-template-columns: repeat(2, 1fr);
-      column-gap: px-to-rem(35);
-      row-gap: px-to-rem(50);
+      grid-template-columns: repeat(2, 45%);
+      justify-content: center;
     }
     @include laptop {
       margin: px-to-rem(104) 0;
       grid-template-columns: repeat(3, 1fr);
+      justify-content: normal;
       column-gap: px-to-rem(30);
       row-gap: px-to-rem(40);
     }
     @include desktop {
       column-gap: px-to-rem(45);
       row-gap: px-to-rem(60);
-
 
     }
   }

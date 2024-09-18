@@ -29,7 +29,7 @@
 /* Brand Colors */
 
 $primary-color: #42446E;
-$secondary-color: #666666;
+$secondary-color: #42446E;
 $dark-color: #333333;
 $primary-10-color:#F5F5F5;
 /* Neutral Colors */
@@ -79,6 +79,7 @@ $raleway: "Raleway", "HelveticaNeue", "Helvetica", sans-serif; /* 2 */
 
 /* Font sizes */
 $fs-xs: 0.75rem; // 12px
+$fs-xxs: 0.875rem; // 14px
 $fs-sm: 1rem; // 16px
 $fs-md: 1.125rem; // 18px
 $fs-lg: 1.25rem; // 20px
@@ -129,6 +130,8 @@ $fw-black: 900;
 ============================================= */
 
 $breakpoints: (
+        xs: 24.375rem,
+  // 390px
         sm: 40rem,
   // 640px
         md: 48rem,

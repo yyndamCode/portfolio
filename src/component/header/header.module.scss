@@ -1,20 +1,56 @@
 @import "../../styles/sass/all";
 .header{
+
   @include between;
   padding:px-to-rem(20) 0;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1400px;
 
   &__group{
     display: flex;
     align-items: center;
     gap: px-to-rem(20);
 
-    @include laptop {
-      gap: px-to-rem(30); /* Adjust padding for desktop screens */
-    }
-    @include desktop {
-      gap: px-to-rem(50); /* Adjust padding for desktop screens */
+
+    @include android {
+      display: none;
+
+      &--active {
+        width: calc(100% - 60px);
+        height: 88vh;
+        position: absolute;
+        top: px-to-rem(100);
+        right: 0;
+        left: 0;
+        z-index: 11;
+        background-color: $primary-color;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        padding: px-to-rem(10) px-to-rem(30);
+        gap: px-to-rem(30);
+      }
+
     }
 
+    @include laptop {
+      gap: px-to-rem(30);
+      @include between;
+    }
+    @include desktop {
+      gap: px-to-rem(50);
+    }
+  }
+
+  @include android {
+    background-color: $primary-color;
+    max-width: 100%;
+    padding: px-to-rem(20);
+
+  }
+  @include laptop {
+    background-color: $white;
+    max-width: 1400px;
 
   }
 }

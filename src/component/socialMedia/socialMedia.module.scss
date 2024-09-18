@@ -2,6 +2,7 @@
 .socialMedia{
   @include center;
   gap: px-to-rem(20);
+  z-index: 111;
   @include tablet {
     gap: px-to-rem(15);
   }

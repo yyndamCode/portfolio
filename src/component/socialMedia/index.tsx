@@ -5,11 +5,11 @@ import { PiGithubLogoFill } from "react-icons/pi";
 import {FaTwitter} from "react-icons/fa6";
 import { TiSocialLinkedin } from "react-icons/ti";
 
-const SocialMedia = () => {
+const SocialMedia: React.FC = () => {
 
     return (
         <div className={styles['socialMedia']}>
-            <MediaLink size="small" mediaHref="https://github.com/yhlass7/portfolio">
+            <MediaLink size="small" mediaHref="https://github.com/yhlass7">
                 <PiGithubLogoFill/>
             </MediaLink>
             <MediaLink size="small" mediaHref="/">
@@ -18,6 +18,7 @@ const SocialMedia = () => {
             <MediaLink size="small" mediaHref="/">
             <TiSocialLinkedin/>
             </MediaLink>
+
         </div>
     );
 };

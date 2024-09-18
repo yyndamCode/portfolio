@@ -4,21 +4,20 @@
   @include center;
   border: none;
   border-radius: 100%;
-  background-color: $media-link-bg;
-  color: $media-link-text-color;
-  font-size: $fs-lg;
+
 
   &--small {
+    width: px-to-rem(30);
+    height: px-to-rem(30);
+    font-size: $fs-lg;
 
-    @include tablet {
-      width: px-to-rem(24);
-      height: px-to-rem(24);
-      font-size: $fs-md;
+    @include android {
+      background-color: $media-link-text-color;
+      color: $media-link-bg;
     }
     @include laptop {
-      width: px-to-rem(30);
-      height: px-to-rem(30);
-      font-size: $fs-lg;
+      background-color: $media-link-bg;
+      color: $media-link-text-color;
     }
   }
 
@@ -28,9 +27,12 @@
       height: px-to-rem(24);
       font-size: $fs-md;
     }
+
     @include laptop {
       width: px-to-rem(56);
       height: px-to-rem(56);
+      background-color: $media-link-bg;
+      color: $media-link-text-color;
       font-size: $fs-lg;
     }
   }

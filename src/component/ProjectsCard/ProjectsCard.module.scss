@@ -12,6 +12,13 @@
     object-fit: cover;
     position: relative;
 
+    @include android{
+      height: px-to-rem(200);
+    }
+    @include  mobile{
+      height: px-to-rem(220);
+    }
+
     @include tablet {
       height: px-to-rem(250);
     }
@@ -27,6 +34,10 @@
     justify-content: space-between;
     row-gap: px-to-rem(18);
 
+    @include android {
+      padding: px-to-rem(18);
+      row-gap: px-to-rem(10);
+    }
     @include tablet {
       padding: px-to-rem(18);
       row-gap: px-to-rem(10);
@@ -45,8 +56,15 @@
     font-size: px-to-rem(28);
     font-weight: $fw-medium;
     line-height: px-to-rem(30);
+
+    @include android{
+      font-size: $fs-lg;
+      line-height: px-to-rem(20);
+    }
+
     @include tablet {
       font-size: $fs-xl;
+      line-height: px-to-rem(30);
     }
     @include laptop {
       font-size: px-to-rem(24);
@@ -61,8 +79,14 @@
     font-size: $fs-md;
     font-weight: $fw-light;
     line-height: px-to-rem(26);
+
+    @include android {
+      font-size: $fs-xxs;
+      line-height: px-to-rem(20);
+    }
     @include tablet {
       font-size: $fs-sm;
+      line-height: px-to-rem(26);
     }
     @include laptop {
       font-size: $fs-md;
@@ -75,6 +99,13 @@
     font-size: $fs-sm;
     font-weight: $fw-medium;
     line-height: px-to-rem(26);
+    @include android{
+      font-size: $fs-xxs;
+      line-height: px-to-rem(20);
+    }@include mobile{
+      font-size: $fs-sm;
+      line-height: px-to-rem(26);
+    }
   }
 
 

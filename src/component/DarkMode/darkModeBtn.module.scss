@@ -2,6 +2,7 @@
 
 .dark-mode-wrapper {
  @include center;
+  z-index: 111;
 }
 
 .checkbox {
@@ -31,33 +32,39 @@
     transform: translateX(0);
     transition: transform 0.2s linear;
 
-    @include tablet {
+    @include android {
       height: px-to-rem(16);
       width: px-to-rem(16);
+      background-color: $primary-color;
+
     }
     @include laptop {
       height: px-to-rem(22);
       width: px-to-rem(22);
+      background-color: $white;
+
     }
   }
 
-  @include tablet {
+  @include android {
     height: px-to-rem(15);
     width: px-to-rem(35);
     font-size: $fs-xs;
+    background-color: $white;
 
   }
   @include laptop {
     height: px-to-rem(20);
     width: px-to-rem(50);
     font-size: $fs-sm;
+    background-color: $primary-color;
 
   }
 }
 
 .checkbox:checked + .switch .ball {
 
-  @include tablet {
+  @include android {
     transform: translateX(px-to-rem(24));
   }
   @include laptop {

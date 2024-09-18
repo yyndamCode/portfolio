@@ -15,7 +15,7 @@
     width: px-to-rem(330);
     height: px-to-rem(330);
     border-radius: 50%;
-    @include tablet {
+    @include android {
       width: px-to-rem(270);
       height: px-to-rem(270);
     }
@@ -25,7 +25,7 @@
     }
   }
 
-  @include tablet {
+  @include android {
     width: px-to-rem(290);
     height: px-to-rem(290);
   }
