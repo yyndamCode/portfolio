@@ -19,6 +19,12 @@ const MyProjects = () => {
                 )}
             </div>
         </SectionContent>
+
+
+
+
+
+
     );
 };
 

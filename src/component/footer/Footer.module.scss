@@ -6,18 +6,52 @@
   &__top {
     @include between;
     padding-bottom: px-to-rem(46);
+
+    @include android {
+      flex-direction: column;
+      padding-bottom: px-to-rem(26);
+    }
+    @include laptop {
+      flex-direction: row;
+      padding-bottom: px-to-rem(46);
+    }
   }
 
   &__group {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: px-to-rem(50);
+
+    @include tablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr ;
+      flex-direction: column;
+      gap: px-to-rem(15);
+    }
+
+    @include laptop {
+      flex-direction: row;
+      gap: px-to-rem(50);
+    }
+
   }
 
   &__bottom {
     @include between;
     padding-top: px-to-rem(62);
     border-top: px-to-rem(2) solid $secondary-color;
+
+
+    @include android {
+      flex-direction: column;
+      gap: px-to-rem(20);
+    }
+
+    @include laptop {
+      @include between;
+      flex-direction: row;
+      gap: px-to-rem(0);
+    }
   }
 
   &__sub-title {

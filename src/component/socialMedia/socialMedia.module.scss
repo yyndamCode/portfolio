@@ -3,6 +3,7 @@
   @include center;
   gap: px-to-rem(20);
   z-index: 111;
+  grid-column: 1/3;
   @include tablet {
     gap: px-to-rem(15);
   }
