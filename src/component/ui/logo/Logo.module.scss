@@ -12,13 +12,13 @@
   -webkit-text-fill-color: transparent;
 
   &__title {
-    font-size: 38px;
-    font-weight: 600;
-    line-height: 42px;
+    font-size: px-to-rem(38);
+    font-weight: $fw-semibold;
+    line-height: px-to-rem(42);
   }
 
   &__text {
-    font-size: 18px;
-    font-weight: 600;
+    font-size: px-to-rem(18);
+    font-weight: $fw-semibold;
   }
 }

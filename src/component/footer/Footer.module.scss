@@ -22,17 +22,13 @@
     align-items: center;
     gap: px-to-rem(50);
 
-    @include tablet {
-      display: grid;
-      grid-template-columns: 1fr 1fr ;
-      flex-direction: column;
-      gap: px-to-rem(15);
-    }
+    //@include tablet {
+    //  display: grid;
+    //  grid-template-columns: 1fr 1fr ;
+    //  flex-direction: column;
+    //  gap: px-to-rem(15);
+    //}
 
-    @include laptop {
-      flex-direction: row;
-      gap: px-to-rem(50);
-    }
 
   }
 
