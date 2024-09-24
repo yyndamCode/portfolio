@@ -10,9 +10,11 @@
     @include android {
       flex-direction: column;
       padding-bottom: px-to-rem(26);
+      gap: px-to-rem(40);
     }
     @include laptop {
       flex-direction: row;
+      gap: px-to-rem(0);
       padding-bottom: px-to-rem(46);
     }
   }
@@ -22,14 +24,15 @@
     align-items: center;
     gap: px-to-rem(50);
 
-    //@include tablet {
-    //  display: grid;
-    //  grid-template-columns: 1fr 1fr ;
-    //  flex-direction: column;
-    //  gap: px-to-rem(15);
-    //}
+  }
 
-
+  &__link {
+    @include android {
+      font-size: px-to-rem(14);
+    }
+    @include laptop {
+      font-size: px-to-rem(16);
+    }
   }
 
   &__bottom {
@@ -41,12 +44,15 @@
     @include android {
       flex-direction: column;
       gap: px-to-rem(20);
+      padding-top: px-to-rem(32);
+
     }
 
     @include laptop {
       @include between;
       flex-direction: row;
       gap: px-to-rem(0);
+      padding-top: px-to-rem(62);
     }
   }
 

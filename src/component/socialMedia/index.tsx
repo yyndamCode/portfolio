@@ -9,7 +9,7 @@ const SocialMedia: React.FC = () => {
 
     return (
         <div className={styles['socialMedia']}>
-            <MediaLink size="small" mediaHref="https://github.com/yhlass7">
+            <MediaLink size="small" mediaHref="https://github.com/yyndamCode">
                 <PiGithubLogoFill/>
             </MediaLink>
             <MediaLink size="small" mediaHref="/">

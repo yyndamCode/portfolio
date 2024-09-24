@@ -14,8 +14,8 @@ const MyProjects = () => {
             <div className={styles["my-projects__box"]}>
                 {projectsData.map((project,index) =>
                     <ProjectsCard  key={index}  id={project.id} image={project.image} title={project.title}
-                                  description={project.description} techStack={project.techStack} codeUrl={""}
-                                  livePreviewUrl={""} isDarkMode={isDarkMode} />
+                                  description={project.description} techStack={project.techStack} codeUrl={project.gitCode}
+                                  livePreviewUrl={project.livePreviewUrl} isDarkMode={isDarkMode} />
                 )}
             </div>
         </SectionContent>
