@@ -7,6 +7,8 @@ export interface Project {
     title: string;
     description: string;
     techStack: string;
+    gitCode: string;
+    livePreviewUrl: string;
 }
 
 export const projectsData: Project[] = [

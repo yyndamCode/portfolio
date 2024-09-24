@@ -11,7 +11,7 @@ interface ProjectCardProps {
     livePreviewUrl: string;
     codeUrl: string;
     id: number;
-    image: StaticImageData;// Hem string hem de StaticImageData olabilir
+    image: StaticImageData;
     isDarkMode: boolean;
 }
 
